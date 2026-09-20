@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd ~
 
 #package installs
 packages=("figlet" "lolcat" "pv")
@@ -48,10 +48,45 @@ while true; do
             ;;
 
         1)
-            curl -s -L https://raw.githubusercontent.com/null097-something/Colors/refs/heads/main/Colors | pv -L 20k -s $(curl -s -L https://raw.githubusercontent.com/null097-something/Colors/refs/heads/main/Colors | wc -c) > colors
-            echo "colors installed!"
-            ;;
-
+            echo -n "Searching" ; echo "..." | pv -q -L 5
+            if [ -f "$(pwd)/colors" ]; then
+                 echo -n "colors installed, proceed with update? [Y/N]: "
+                 read ans
+                 case "$ans" in
+                   Y|y|Yes|yes)
+                     curl -s -L https://raw.githubusercontent.com/null097-something/Colors/refs/heads/main/Colors | pv -L 20k -s $(curl -s -L https://raw.githubusercontent.com/null097-something/Colors/refs/heads/main/Colors | wc -c) > colors
+                     echo "colors updated!"
+                     ;;
+                   M|m|maybe|Maybe)
+                     echo "tf you mean \"maybe\""
+                     ;;
+                   N|n|no|No)
+                     echo "colors not updated!"
+                     ;;
+                   *)
+                     echo "what?"
+                     ;;
+                 esac
+            elif [ ! -f "$(pwd)/colors" ]; then
+                 echo -n "colors not installed, install? [Y/N]: "
+                 read ans2
+                 case "$ans2" in
+                   Y|y|Yes|yes)
+                     echo -n "installing"; echo "..." | pv -q -L 5 
+                     curl -s -L https://raw.githubusercontent.com/null097-something/Colors/refs/heads/main/Colors | pv -L 20k -s $(curl -s -L https://raw.githubusercontent.com/null097-something/Colors/refs/heads/main/Colors | wc -c) > colors
+                     ;;
+                   N|n|No|no)
+                     echo "awh man"
+                     ;;
+                   M|m|maybe|Maybe)
+                     echo "tf you mean \"maybe\""
+                     ;;
+                   *)
+                     echo "what?"
+                     ;;
+                 esac
+             fi
+             ;;
         2)
             echo "Ever got tired of pasting the same lines over and over again?"
             echo -n "well "; echo "we've got you!" | lolcat | pv -q -L 40
