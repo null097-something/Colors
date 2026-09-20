@@ -14,10 +14,14 @@
 ### Installation
 1. Download the setup file:
 ```bash
-curl -s https://raw.githubusercontent.com/null097-something/Colors/refs/heads/main/Colors_Setup.sh | bash
+curl -s https://raw.githubusercontent.com/null097-something/Colors/refs/heads/main/Colors_Setup.sh > colors_setup; chmod +x colors_setup
 ```
-2. Append the `source colors` string to the top of your project
-3. Start using colors! 🌈
+2. Setup Colors:
+```bash
+./colors_setup
+```
+3. Append the `source colors` string to the top of your project
+4. Start using colors! 🌈
 
 ```bash
 source colors
