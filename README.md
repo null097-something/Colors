@@ -12,9 +12,12 @@
 ## Quick Start
 
 ### Installation
-
-1. Download the `colors` script to your project
-2. Source it at the beginning of your script:
+1. Download the setup file:
+```bash
+curl -s https://raw.githubusercontent.com/null097-something/Colors/refs/heads/main/Colors_Setup.sh | bash
+```
+2. Append the `source colors` string to the top of your project
+3. Start using colors! 🌈
 
 ```bash
 source colors
@@ -28,6 +31,7 @@ Once sourced, use predefined color variables in your echo commands:
 echo -e "${GREEN}This is green!${RESET}"
 echo -e "${RED}This is red!${RESET}"
 echo -e "${BLUE}This is blue!${RESET}"
+echo -e "$(RGB 0 255 0)This is green! (but more complicated to show off RGB)${RESET}"
 ```
 
 ### Advanced: RGB Colors
