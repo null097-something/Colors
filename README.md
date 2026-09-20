@@ -7,7 +7,6 @@
 - 🎨 **8-bit color support** – Standard terminal colors with easy-to-remember variable names
 - 🌈 **16.7 million colors** – Full RGB color support for vibrant, custom palettes
 - 🔧 **Simple integration** – Just source the script and start using colors
-- 🚀 **Beta: 16-bit colors** – Extended color support in development
 - 📈 **Future support** – 281 trillion colors in development
 
 ## Quick Start
@@ -42,10 +41,6 @@ echo -e "(RGB 3 255 6) This is a custom green! {RESET}"
 ## Available Colors
 
 All standard ANSI colors are available as variables (e.g., `${GREEN}`, `${RED}`, `${BLUE}`, etc.). Use `${RESET}` to return to default terminal colors.
-
-## Development
-
-16-bit color support is currently in beta. Stay tuned for more updates!
 
 ---
 
