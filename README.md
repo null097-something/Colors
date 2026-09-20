@@ -4,10 +4,10 @@
 
 ## Features
 
-- 🎨 **8-bit color support** – Standard 256 terminal colors with easy-to-remember variable names
-- 🌈 **16.7 million colors** – Full RGB color support for vibrant, custom palettes
+- 🎨 **8-bit and 16-bit color support** – Standard 256 terminal along with 65535 colors with easy-to-remember variable names
+- 🌈 **281 trillion colors** – Full RGB and RGB16 color support for vibrant, custom palettes
 - 🔧 **Simple integration** – Just source the script and start using colors
-- 📈 **Future support** – 281 trillion colors in development
+- 📈 **Future support** – 281 trillion colors are here!!
 
 ## Quick Start
 
