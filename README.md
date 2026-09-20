@@ -1,10 +1,10 @@
 # Colors
 
-**Colors** is an ANSI color repository containing every foreground and background color your terminal can display. Say goodbye to pasting the same color codes over and over again!
+**Colors** is an ANSI color repository containing every 24-bit trueColor foreground and background color your terminal can display. Say goodbye to pasting the same color codes over and over again!
 
 ## Features
 
-- 🎨 **8-bit color support** – Standard terminal colors with easy-to-remember variable names
+- 🎨 **8-bit color support** – Standard 256 terminal colors with easy-to-remember variable names
 - 🌈 **16.7 million colors** – Full RGB color support for vibrant, custom palettes
 - 🔧 **Simple integration** – Just source the script and start using colors
 - 📈 **Future support** – 281 trillion colors in development
@@ -39,7 +39,7 @@ echo -e "$(RGB 0 255 0)This is green! (but more complicated to show off RGB)${RE
 For custom colors from the full 16.7 million color palette, use RGB format:
 
 ```bash
-echo -e "(RGB 3 255 6) This is a custom green! {RESET}"
+echo -e "$(RGB 3 255 6) This is a custom green! ${RESET}"
 ```
 
 ## Available Colors
