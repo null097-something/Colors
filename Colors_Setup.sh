@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 #package installs
 packages=("figlet" "lolcat" "pv")
 
