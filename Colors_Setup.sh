@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 #package installs
@@ -48,7 +47,7 @@ while true; do
             ;;
 
         1)
-            curl -s https://pastebin.com/raw/Q2pZ3Az8 | pv -s $(curl -s https://pastebin.com/raw/Q2pZ3Az8 | wc -c) > colors
+            curl -s -L https://raw.githubusercontent.com/null097-something/Colors/refs/heads/main/Colors | pv -s $(curl -s -L https://raw.githubusercontent.com/null097-something/Colors/refs/heads/main/Colors | wc -c) > colors
             echo "colors installed!"
             ;;
 
@@ -66,7 +65,7 @@ while true; do
             echo 'After appending "source colors", use "echo -e "${GREEN}this is green!${RESET}" " to add colors.'
             echo "Colors also has support for 16.7 million colors! (281 trillion in development)"
             echo "to use this special pallet rather than standard 8 bit labelled colors, use"
-            echo 'echo -e "{RGB 3 255 6} green :O {RESET}"'
+            echo 'echo -e "(RGB 3 255 6) green :O {RESET}"'
             echo "Colors is also in beta for supporting 16 bit colors."
             echo ""
             ;;
