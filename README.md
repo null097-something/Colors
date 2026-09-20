@@ -43,6 +43,7 @@ echo -e "$(RGB 3 255 6) This is a custom green! ${RESET}"
 ```
 
 For the full power of Colors, you can use RGB_16 for the full 281 trillion colors*
+-# *if your terminal supports 16-bit
 ```bash
 echo -e "$(RGB_16 5273 283 65532)this is custom blue!${RESET}"
 ```
