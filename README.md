@@ -42,6 +42,11 @@ For custom colors from the full 16.7 million color palette, use RGB format:
 echo -e "$(RGB 3 255 6) This is a custom green! ${RESET}"
 ```
 
+For the full power of Colors, you can use RGB_16 for the full 281 trillion colors*
+```bash
+echo -e "$(RGB_16 5273 283 65532)this is custom blue!${RESET}"
+```
+
 ## Available Colors
 
 All standard ANSI colors are available as variables (e.g., `${GREEN}`, `${RED}`, `${BLUE}`, etc.). Use `${RESET}` to return to default terminal colors.
