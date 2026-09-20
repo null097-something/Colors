@@ -48,7 +48,7 @@ while true; do
             ;;
 
         1)
-            curl -s -L https://raw.githubusercontent.com/null097-something/Colors/refs/heads/main/Colors | pv -L 10k -s $(curl -s -L https://raw.githubusercontent.com/null097-something/Colors/refs/heads/main/Colors | wc -c) > colors
+            curl -s -L https://raw.githubusercontent.com/null097-something/Colors/refs/heads/main/Colors | pv -L 20k -s $(curl -s -L https://raw.githubusercontent.com/null097-something/Colors/refs/heads/main/Colors | wc -c) > colors
             echo "colors installed!"
             ;;
 
