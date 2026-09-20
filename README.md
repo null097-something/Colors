@@ -36,7 +36,7 @@ echo -e "${BLUE}This is blue!${RESET}"
 For custom colors from the full 16.7 million color palette, use RGB format:
 
 ```bash
-echo -e "{RGB 3 255 6} This is a custom green! {RESET}"
+echo -e "(RGB 3 255 6) This is a custom green! {RESET}"
 ```
 
 ## Available Colors
